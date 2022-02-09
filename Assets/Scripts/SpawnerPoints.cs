@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class SpawnerPoints : MonoBehaviour
 {
-
-    [SerializeField] private GameObject _tempMob;
+    [SerializeField] private Enemy _tempMob;
     [SerializeField] private int _numberMobs;
     [SerializeField] private Transform[] _points;
 
@@ -20,11 +19,7 @@ public class SpawnerPoints : MonoBehaviour
 
         for (int i = 0; i < _numberMobs; i++)
         {
-            GameObject newObject = Instantiate(_tempMob, new Vector3(0, 0, 0), Quaternion.identity);
-
-            Transform tempObjectTransform = newObject.GetComponent<Transform>();
-
-            tempObjectTransform.position = _points[Random.Range(0, _points.Length)].position;
+            Instantiate(_tempMob, _points[Random.Range(0, _points.Length)].position, Quaternion.identity);
 
             yield return waitForTwoSeconds;
         }

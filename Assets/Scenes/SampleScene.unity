@@ -437,7 +437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a40736d5f6766234db363096790ca2ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tempMob: {fileID: 9125017210103745437, guid: 532e1d4d42104884383d8cf7e665e9b6, type: 3}
+  _tempMob: {fileID: -6454208522451390130, guid: 532e1d4d42104884383d8cf7e665e9b6, type: 3}
   _numberMobs: 6
   _points:
   - {fileID: 1381620799}
